@@ -1,0 +1,26 @@
+{
+  "name": "common-classes-js",
+  "version": "0.0.0",
+  "description": "Common javascript classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbremer/common-classes-js.git"
+  },
+  "author": {
+    "name": "Tom Bremer",
+    "email": "tom@tbremer.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbremer/common-classes-js/issues"
+  },
+  "homepage": "https://github.com/tbremer/common-classes-js#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.2",
+    "babel-preset-es2015": "^6.1.18"
+  }
+}
