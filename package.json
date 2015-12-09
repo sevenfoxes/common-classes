@@ -1,6 +1,6 @@
 {
   "name": "common-classes",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Common javascript classes",
   "main": "lib/common-classes.js",
   "scripts": {
