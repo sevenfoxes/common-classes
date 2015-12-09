@@ -1,12 +1,11 @@
 {
   "name": "common-classes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Common javascript classes",
   "main": "lib/common-classes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run compile",
-
     "clean:lib": "rimraf 'lib/*'",
     "compile": "npm run clean:lib && babel -d lib/ src/"
   },
