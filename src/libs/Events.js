@@ -28,8 +28,10 @@ export default class Events {
    */
   subscribe() { return this.register.apply(this, arguments); }
   unsubscribe() { return this.unregister.apply(this, arguments); }
+
   on() { return this.register.apply(this, arguments); }
   off() { return this.unregister.apply(this, arguments); }
+
   listen() { return this.register.apply(this, arguments); }
   unlisten() { return this.unregister.apply(this, arguments); }
 
@@ -38,4 +40,5 @@ export default class Events {
    * COMMON PUBLISH ALIASES
    */
   emit() { return this.trigger.apply(this, arguments); }
+  publish() { return this.trigger.apply(this, arguments); }
 }
