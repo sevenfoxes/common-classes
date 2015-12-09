@@ -26,16 +26,16 @@ export default class Events {
    * COMMON SUBSCRIBE AND UNSUBSCRIBE ALIASES
    *
    */
-  subscribe() { return this.register(arguments); }
-  unsubscribe() { return this.unregister.call(this, arguments); }
-  on() { return this.register.call(this, arguments); }
-  off() { return this.unregister.call(this, arguments); }
-  listen() { return this.register.call(this, arguments); }
-  unlisten() { return this.unregister.call(this, arguments); }
+  subscribe() { return this.register.apply(arguments); }
+  unsubscribe() { return this.unregister.apply(this, arguments); }
+  on() { return this.register.apply(this, arguments); }
+  off() { return this.unregister.apply(this, arguments); }
+  listen() { return this.register.apply(this, arguments); }
+  unlisten() { return this.unregister.apply(this, arguments); }
 
   /**
    *
    * COMMON PUBLISH ALIASES
    */
-  emit() { return this.trigger.call(this, arguments); }
+  emit() { return this.trigger.apply(this, arguments); }
 }
