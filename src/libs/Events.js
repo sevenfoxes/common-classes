@@ -26,7 +26,7 @@ export default class Events {
    * COMMON SUBSCRIBE AND UNSUBSCRIBE ALIASES
    *
    */
-  subscribe() { return this.register.apply(arguments); }
+  subscribe() { return this.register.apply(this, arguments); }
   unsubscribe() { return this.unregister.apply(this, arguments); }
   on() { return this.register.apply(this, arguments); }
   off() { return this.unregister.apply(this, arguments); }
