@@ -5,6 +5,8 @@
   "main": "lib/common-classes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run compile",
+
     "clean:lib": "rimraf 'lib/*'",
     "compile": "npm run clean:lib && babel -d lib/ src/"
   },

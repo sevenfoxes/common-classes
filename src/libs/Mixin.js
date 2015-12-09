@@ -1,6 +1,6 @@
 'use strict';
 
-export class Mixin {
+export default class Mixin {
   constructor(...mixins) {
     for (let mixin of mixins.reverse()) {
       let props = Object.getOwnPropertyNames(mixin.prototype),
