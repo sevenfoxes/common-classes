@@ -1,6 +1,6 @@
 'use strict';
 
-export class Events {
+class Events {
   constructor() { this._events = {}; }
 
   trigger(label, ...rest) {
@@ -38,5 +38,6 @@ export class Events {
    * COMMON PUBLISH ALIASES
    */
   emit() { return this.trigger.call(this, arguments); }
-};
+}
 
+export default Events;
