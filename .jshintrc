@@ -10,8 +10,11 @@
   // Define globals exposed by Node.js.
   "node": true,
 
+  // Define globals exposed by Mocha testing suite.
+  "mocha": true,
+
   // Allow ES6.
-  "esnext": true,
+  "esversion": 6,
 
   /*
    * ENFORCING OPTIONS
