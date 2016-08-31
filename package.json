@@ -2,7 +2,7 @@
   "name": "common-classes",
   "version": "0.0.8",
   "description": "Common javascript classes",
-  "main": "lib/common-classes.js",
+  "main": "common-classes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,10 +24,5 @@
     "jshint": "^2.8.0",
     "mocha": "^2.3.4",
     "rimraf": "^2.4.4"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
   }
 }
