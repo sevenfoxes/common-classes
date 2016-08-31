@@ -1,6 +1,6 @@
 'use strict';
 
-export default class Events {
+module.exports = class Events {
   constructor() { this._events = {}; }
 
   trigger(label, ...rest) {
